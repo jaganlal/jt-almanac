@@ -5,7 +5,6 @@ Angular directive to show full screen calendar
 A lightweight, extensible directive for showing full screen calendar
 
 
-
 ##Settings
 ####Usage
 ```html
@@ -23,5 +22,7 @@ $scope.bookedDays = [
 
 ####Required
 * `ngAlmanac` - The directive
+
+
 ####Optional
 * `booked-dates` - to highlight any dates
