@@ -1,0 +1,61 @@
+.leftarrow {
+  float:left;
+  margin-left: 20px;
+}
+
+.datetoshow {
+  text-align:center;
+  color:#FAFFFC;
+  padding-top:10px;
+}
+
+.rightarrow {
+  float:right;
+  margin-right: 20px;
+}
+
+.days-container {
+  background-color: orange;
+  
+  -webkit-columns: auto 7;
+  -moz-columns: auto 7;
+  columns: auto 7;
+  
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  
+  -webkit-column-rule: 1px solid #1a242f;
+  -moz-column-rule: 1px solid #1a242f;
+  column-rule: 1px solid #1a242f;
+
+  color: white;
+  text-align: center;
+  line-height: 5;
+
+  margin: 10px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.days-container.day{
+  background-color: white;
+  color: #000;
+
+  -webkit-column-rule: 0px solid #1a242f;
+  -moz-column-rule: 0px solid #1a242f;
+  column-rule: 0px solid #1a242f;
+}
+
+.day-cell{
+  border-bottom:1pt solid black;
+  border-right:1pt solid black;
+}
+
+.cell-data {
+  background: forestgreen;
+  width: 100%;
+  height: 10px;
+  display: block;
+}
