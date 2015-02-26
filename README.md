@@ -20,6 +20,14 @@ $scope.bookedDays = [
       {day: moment('02/20/2015', 'MM-DD-YYYY')}];
 ```
 
+
+
+####Prerequisite
+* Need `npm` & `bower` 
+* Run `npm install`
+* Run `bower install`
+
+
 ####Required
 * `ngAlmanac` - The directive
 
