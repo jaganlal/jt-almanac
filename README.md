@@ -1,5 +1,5 @@
 # jt-almanac
-Angular directive to show full screen calendar
+Angular directive to show full screen `responsive` calendar
 
 
 A lightweight, extensible directive for showing full screen calendar. Check out in action - http://codepen.io/jaganlal/full/dPKvag
