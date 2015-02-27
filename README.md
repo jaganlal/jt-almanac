@@ -2,8 +2,7 @@
 Angular directive to show full screen calendar
 
 
-A lightweight, extensible directive for showing full screen calendar
-
+A lightweight, extensible directive for showing full screen calendar.
 
 ##Settings
 ####Usage
@@ -13,6 +12,8 @@ A lightweight, extensible directive for showing full screen calendar
 	</ng-almanac>
 ```
 
+
+To add data to the calendar, just throw in `booked-dates` attributes, something like this
 ```javascript
 $scope.bookedDays = [
       {day: moment('02/04/2015', 'MM-DD-YYYY')}, 
@@ -20,7 +21,16 @@ $scope.bookedDays = [
       {day: moment('02/20/2015', 'MM-DD-YYYY')}];
 ```
 
+If any of the above dates are matching, you'll find a `green band` running over that cell.
 
+Today's date will highlight the background cell with the following styles
+
+```css
+	style.backgroundColor = 'yellow';
+	style.textDecoration = 'underline';
+	style.fontWeight = 'bold';
+	style.color = 'dodgerblue';
+```
 
 ####Prerequisite
 * Need `npm` & `bower` 

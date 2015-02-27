@@ -165,6 +165,13 @@ angular.module('jtAlmanacApp')
             thisMonth.add(-previousDays, 'days');
           }
 
+          /**
+          * This loop is a hack to overcome css column-count behaviour. 
+          * When column-count is specified inside <li>, the order of list 
+          * is vertical. 
+          * Here i manipulate the order in which array is populated
+          */
+
           for(i=0; i<daysInWeek; i++) { 
             count = 0;
             tempMonth = thisMonth.clone();
@@ -224,72 +231,6 @@ angular.module('jtAlmanacApp')
         }; //nextmonth
 
         scope.showMonth();
-/*
-        scope.showdata = function() {
-          var d = new Date(), y = d.getFullYear(), m = d.getMonth();
-
-          if(m === scope.almanacAttributes.currentMonth) { //set today's color only if this month and current month is same
-            var firstDay = new Date(y, m, 1);
-            var lastDay = new Date(y, m + 1, 0);
-            var today = d.getDate();
-            today += scope.almanacAttributes.numberOfpreviousDays[scope.almanacAttributes.slideIndex];
-
-            scope.almanacAttributes.dayCells[today-1].style.border = '2px solid orange';
-            scope.almanacAttributes.dayCells[today-1].style.textDecoration = 'underline';
-            scope.almanacAttributes.dayCells[today-1].style.fontWeight = 'bold';
-            scope.almanacAttributes.dayCells[today-1].style.color = 'brown';
-          }
-        
-          // var bookedClasses = scope.getFormattedUpcomingClasses(Auth.user.upcoming_classes);
-          var data = [];
-          data.push(d);
-          var ca = scope.processClassDaysResponse(data);
-
-          for(var i=0; i<ca.length; i++) {
-            scope.almanacAttributes.dayCells[Number(ca[i])-1+scope.almanacAttributes.numberOfpreviousDays[scope.almanacAttributes.slideIndex]].style.visibility = 'visible';
-            scope.almanacAttributes.dayCells[Number(ca[i])-1+scope.almanacAttributes.numberOfpreviousDays[scope.almanacAttributes.slideIndex]].children[0].style.visibility = 'visible';
-          } //for loop
-
-        }; //showdata
-
-        scope.getFormattedUpcomingClasses = function(upcomingClasses) {
-          var i = 0;
-          var formattedString = "";
-          scope.almanacAttributes.upcomingClasses = [];
-          var bookedClasses = [];
-          var d = null;
-          for(i=0; i<upcomingClasses.length; i++) {
-            d = moment(upcomingClasses[i].classScheduleOn);
-            formattedString = d.format('MMM Do YYYY - h:mm:ss a');
-            scope.almanacAttributes.upcomingClasses.push({"classScheduleOn":formattedString});
-
-            //add it to booked classes only if its for this month
-            if(scope.almanacAttributes.currentMonth === d.get('month')) {
-              bookedClasses[d.get('date')] = true;
-            }
-          }
-
-          return bookedClasses;
-        }; //getFormattedUpcomingClasses
-
-        scope.processClassDaysResponse = function(data) {
-          var i=0;
-          var d = null;
-          var days = [];
-          for(i=0; i<data.length; i++) {
-            d = moment(data[i]);
-
-            //get days for current month
-            if(d.get('month') !== scope.almanacAttributes.currentMonth) {
-              continue;
-            }
-
-            days.push(d.get('date'));
-          } //for loop
-
-          return days;
-        };//processClassDaysResponse
-*/
 
       }, //postLink function
     
