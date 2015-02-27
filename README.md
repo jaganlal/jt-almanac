@@ -2,7 +2,7 @@
 Angular directive to show full screen calendar
 
 
-A lightweight, extensible directive for showing full screen calendar. Check out in action - http://codepen.io/jaganlal/full/KweWRV
+A lightweight, extensible directive for showing full screen calendar. Check out in action - http://codepen.io/jaganlal/full/dPKvag
 
 ##Settings
 ####Usage
