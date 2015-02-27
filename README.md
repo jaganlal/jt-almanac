@@ -4,6 +4,9 @@ Angular directive to show full screen calendar
 
 A lightweight, extensible directive for showing full screen calendar. Check out in action - http://codepen.io/jaganlal/full/dPKvag
 
+<p data-height="268" data-theme-id="12663" data-slug-hash="dPKvag" data-default-tab="result" data-user="jaganlal" class='codepen'>See the Pen <a href='http://codepen.io/jaganlal/pen/dPKvag/'>jt-almanac</a> by Jaganlal (<a href='http://codepen.io/jaganlal'>@jaganlal</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
 ##Settings
 ####Usage
 ```html
